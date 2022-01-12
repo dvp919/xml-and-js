@@ -3,10 +3,34 @@
 
 <People>
 
-    <name>Dhruv Vinodbhai Patel</name>
-    <hobbies>
-        <hobby1>Cricket</hobby1>
-        <hobby2>Video Games</hobby2>
-    </hobbies>
-
+    <name>Dhruv Vinodbhai Patel
+    <hobbies>Cricket</hobbies>
+    </name>
+    <name>A
+    <hobbies>Basketball</hobbies>
+    </name>
+    <name>B
+    <hobbies>Hockey</hobbies>
+    </name>
+    <name>C
+    <hobbies>Video Games</hobbies>
+    </name>
+    <name>D
+    <hobbies>Volleyball</hobbies>
+    </name>
+    <name>E
+    <hobbies>Netflix</hobbies>
+    </name>
+    <name>F
+    <hobbies>Books</hobbies>
+    </name>
+    <name>G
+    <hobbies>Music</hobbies>
+    </name>
+    <name>H
+    <hobbies>Party</hobbies>
+    </name>
+    <name>I
+    <hobbies>Hiking</hobbies>
+    </name>
 </People>
