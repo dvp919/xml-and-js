@@ -80,7 +80,7 @@
                               <th>Color</th>
                               <th>Image</th>
                             </tr>
-                          
+                         
                             <xsl:for-each select="size[@description='Large']/color_swatch"> 
                               <tr>
                                 <td><xsl:value-of select="."/></td>
