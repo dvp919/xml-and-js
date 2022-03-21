@@ -13,17 +13,17 @@ const parseURLParams = (value) => {
 
 const server = http.createServer(async (req, res) => {
   const [basePath, paramsString] = req.url.split("?");
-
-  if (basePath === "/api/products" && req.method === "GET") {
+  
+  if (basePath === "/assignments/activity/products" && req.method === "GET") {
     const params = parseURLParams(paramsString);
 
     const { data, code } = await product.getAll(params);
 
     res.writeHead(code, { "Content-Type": "application/json" });
     res.end(data);
-  } else if (basePath.match(/\/api\/products\/\w+/) && req.method === "GET") {
+  } else if (basePath.match(/\/assignments\/activity\/products\/\w+/) && req.method === "GET") {
     const id = basePath.split("/")[3];
-
+    
     const { data, code } = await product.getById(id);
 
     res.writeHead(code, { "Content-Type": "application/json" });

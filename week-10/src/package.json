@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Dhruv Patel",
+  "main": "server.js",
+  "scripts": {
+    "test": "Dhruv"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "src": "^1.1.2"
+  }
+}
