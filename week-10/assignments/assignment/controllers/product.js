@@ -47,4 +47,7 @@ const getById = (id) =>
 module.exports = {
   getAll,
   getById,
+  
 };
+
+
