@@ -8,25 +8,25 @@ const getAllDealers = (term, cars_brand, valueTerm) =>
 
         switch(term) {
             case "first_name":
-                data = data.filter((contractor) => contractor.first_name.toLowerCase().includes(valueTerm));
+                data = data.filter((dealer) => dealer.first_name.toLowerCase().includes(valueTerm));
                 break;
             case "last_name":
-                data = data.filter((contractor) => contractor.last_name.toLowerCase().includes(valueTerm));
+                data = data.filter((dealer) => dealer.last_name.toLowerCase().includes(valueTerm));
                 break;
             case "gender":
-                data = data.filter((contractor) => contractor.gender.toLowerCase() === valueTerm.toLowerCase());
+                data = data.filter((dealer) => dealer.gender.toLowerCase() === valueTerm.toLowerCase());
                 break;
             case "email":
-                data = data.filter((contractor) => contractor.email.toLowerCase().includes(valueTerm));
+                data = data.filter((dealer) => dealer.email.toLowerCase().includes(valueTerm));
                 break;
             case "car":
-                data = data.filter((contractor) => contractor.car.toLowerCase().includes(valueTerm));
+                data = data.filter((dealer) => dealer.car.toLowerCase().includes(valueTerm));
                 break;
             case "car_year":
-                data = data.filter((contractor) => contractor.car_year.toLowerCase().includes(valueTerm));
+                data = data.filter((dealer) => dealer.car_year.toLowerCase().includes(valueTerm));
                 break;
             case "ip_address":
-                data = data.filter((contractor) => contractor.ip_address.includes(valueTerm));
+                data = data.filter((dealer) => dealer.ip_address.includes(valueTerm));
                 break;    
             default:
                 //Pass it empty
