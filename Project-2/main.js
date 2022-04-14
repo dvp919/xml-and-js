@@ -37,11 +37,12 @@ const onSubmit = (event) => {
   const term = event.target.filters.value;
   const cars_brand = event.target.cars_brand.value;
   const valueTerm = event.target.input.value;
+  const selling = event.target.selling.value;
   
   if(term === `id`) {
     getDealerById(valueTerm).then(({ data }) => renderTable(data));
   } else {
-    getAllDealers(term, cars_brand.toLowerCase(), valueTerm.toLowerCase()).then(({ data }) => renderTable(data));
+    getAllDealers(term,selling, cars_brand.toLowerCase(), valueTerm.toLowerCase()).then(({ data }) => renderTable(data));
   }
 };
 

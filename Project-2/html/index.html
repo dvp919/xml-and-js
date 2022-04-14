@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dhruv Vinodbhai Patel</title>
+        <title>Project 2</title>
         <style>
             input, select, label, fieldset {
                 margin: 10px;
@@ -9,19 +9,16 @@
             fieldset {
                 max-width: fit-content;
             }
-            table {
-                border: 1px;
-                margin: 10px;
-            }
-            th {
-                padding: 3px;
-                margin: 3px;
+
+            table, td{
+                border: 2px solid;
+                border-color: black;
             }
         </style>
     </head>
     <body>
         <form id="myForm" >
-            <input type="text" name="input" id="input-value-term" placeholder="Please enter Value here"/>
+            Find: <input type="text" name="input" id="input-value-term" placeholder="Please enter Value here"/>
             <select name="filters" id="filter">
                 <option value="none">None</option>
                 <option value="id">Id</option>
@@ -43,7 +40,6 @@
                 <input type="radio" name="selling" value="buying"/>
                 <label for="buying">Buying</label>       
             </fieldset>
-
 
             <label>Car Company :</label>
             <select name="cars_brand" id="car_brand">
