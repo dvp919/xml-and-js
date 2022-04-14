@@ -34,10 +34,21 @@
                 <option value="ip_address">IP Address</option>
             </select>
 
+            <fieldset>                
+                <legend>Anyone Currently Selling or Buying ?</legend>
+                <input type="radio" name="selling" value="none"/>
+                <label for="none">None</label>                            
+                <input type="radio" name="selling" value="selling"/>
+                <label for="selling">Selling</label>                                
+                <input type="radio" name="selling" value="buying"/>
+                <label for="buying">Buying</label>       
+            </fieldset>
+
+
             <label>Car Company :</label>
             <select name="cars_brand" id="car_brand">
                 <option value="All">All</option>
-                <option value="Toyoto">Toyota</option>
+                <option value="Toyota">Toyota</option>
                 <option value="Ford">Ford</option>
                 <option value="Chevrolet">Chevrolet</option>
                 <option value="BMW">BMW</option>

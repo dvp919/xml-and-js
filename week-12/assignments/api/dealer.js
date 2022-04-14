@@ -1,6 +1,6 @@
 const dealers = require("../data/mock_data.json");
 
-const getAllDealers = (term, cars_brand, valueTerm) =>
+const getAllDealers = (term, selling, cars_brand, valueTerm) =>
   new Promise((resolve) => {
     let data = dealers;
 
@@ -33,6 +33,12 @@ const getAllDealers = (term, cars_brand, valueTerm) =>
                 break;
         }
     }
+
+    // check status
+    if(selling && selling != "none") {
+        selling = (selling == "selling") ? true : false;
+        data = data.filter(({is_selling}) => selling === is_selling);
+      }
     
     
     if(cars_brand && cars_brand != "all") {

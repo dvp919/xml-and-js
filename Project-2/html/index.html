@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dhruv Vinodbhai Patel</title>
+        <style>
+            input, select, label, fieldset {
+                margin: 10px;
+            }
+            fieldset {
+                max-width: fit-content;
+            }
+            table {
+                border: 1px;
+                margin: 10px;
+            }
+            th {
+                padding: 3px;
+                margin: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="myForm" >
+            <input type="text" name="input" id="input-value-term" placeholder="Please enter Value here"/>
+            <select name="filters" id="filter">
+                <option value="none">None</option>
+                <option value="id">Id</option>
+                <option value="first_name">First Name</option>
+                <option value="last_name">Last Name</option>
+                <option value="email">Email</option>
+                <option value="gender">Gender</option>
+                <option value="car">Car</option>
+                <option value="car_year">Car Year</option>
+                <option value="ip_address">IP Address</option>
+            </select>
+
+            <fieldset>                
+                <legend>Anyone Currently Selling or Buying ?</legend>
+                <input type="radio" name="selling" value="none"/>
+                <label for="none">None</label>                            
+                <input type="radio" name="selling" value="selling"/>
+                <label for="selling">Selling</label>                                
+                <input type="radio" name="selling" value="buying"/>
+                <label for="buying">Buying</label>       
+            </fieldset>
+
+
+            <label>Car Company :</label>
+            <select name="cars_brand" id="car_brand">
+                <option value="All">All</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Chrysler">Chrysler</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Cadillac">Cadillac</option>
+                <option value="Acura">Acura</option>
+                <option value="Buick">Buick</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Mazda">Mazda</option>
+                
+            </select>
+            <br/>
+            <input type="submit" value="Filter"/>
+            <input type="reset" value="Reset"/>
+        </form>
+        <table>
+            <thead>
+              <th>Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Gender</th>
+              <th>Car</th>
+              <th>Car Year</th>
+              <th>IP address</th>
+              <th>Company</th>
+              <th>Cost</th>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+          <script type="text/javascript" src="./bundle.js"></script>
+    </body>
+</html>
