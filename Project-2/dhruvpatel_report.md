@@ -10,7 +10,7 @@
 
 
 ### What is actually my Data is about and How my page is working ? 
-- So First, I generate data or JSON file from https://www.mockaroo.com/ and got around 10 fields.
+- So First, I generate data or JSON file from https://www.mockaroo.com/ and got around 11 fields.
 - Then, I have created HTML page where I print my table and the data and drop down menu, radio button and filter dropdown menu
 - Then I have linked this file with my Dealer function js file.
 - Where I am mapping my json data into table and make functionality to perform my 3 different characteristics as shown below
