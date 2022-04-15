@@ -36,7 +36,7 @@
 ![alt text](./assets/3.png)
 
 
--Or if we choose none then it will display every details without filtering it.
+- Or if we choose none then it will display every details without filtering it.
 
 ![alt text](./assets/1.png)
 
